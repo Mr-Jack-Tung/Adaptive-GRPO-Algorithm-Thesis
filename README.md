@@ -19,6 +19,8 @@ This thesis proposes Adaptive GRPO (A-GRPO), an extension that dynamically adjus
 
 2. Adaptive GRPO Algorithm
 
+<img width="760" alt="Adaptive GRPO Algorithm" src="https://github.com/user-attachments/assets/51853fd5-c7ea-47ca-bce5-2b7db4167b93" />
+
 
 2.4 Algorithm Pseudocode
 ```
