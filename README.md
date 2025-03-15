@@ -12,9 +12,10 @@ Modern large-scale language models are often trained using supervised learning a
 
 Despite its advantages, GRPO suffers from three main limitations:
 
-Static Optimization Weights – The relative contribution of group preference constraints is fixed, leading to potential under-optimization in uncertain cases.
-Limited Adaptability to Policy Divergence – GRPO applies the same update strength across all training stages, which may cause inefficiencies or overfitting.
-Lack of Uncertainty Awareness – GRPO does not explicitly adjust for the reliability of human feedback, which can vary in quality.
+- Static Optimization Weights – The relative contribution of group preference constraints is fixed, leading to potential under-optimization in uncertain cases.
+- Limited Adaptability to Policy Divergence – GRPO applies the same update strength across all training stages, which may cause inefficiencies or overfitting.
+- Lack of Uncertainty Awareness – GRPO does not explicitly adjust for the reliability of human feedback, which can vary in quality.
+
 This thesis proposes Adaptive GRPO (A-GRPO), an extension that dynamically adjusts optimization parameters based on feedback confidence, policy divergence, and group preference strength.
 
 ### 2. Adaptive GRPO Algorithm
