@@ -6,6 +6,7 @@
 
 Reinforcement learning from human feedback (RLHF) has become a crucial paradigm for aligning large-scale language models with human preferences. Recent advancements, such as Group-Relative Policy Optimization (GRPO), have introduced effective methods for fine-tuning policies based on ranked feedback without requiring an explicit reward model. However, GRPO relies on static update mechanisms that may not fully leverage the complexity of multi-level preference data. This thesis introduces **Adaptive GRPO (A-GRPO)**, a novel extension that dynamically adjusts optimization strategies based on uncertainty, feedback quality, and policy divergence. By integrating an adaptive loss weighting mechanism and hierarchical preference modeling, **A-GRPO** enhances stability, efficiency, and generalization in preference-based policy optimization.
 
+
 ### 1. Introduction
 
 Modern large-scale language models are often trained using supervised learning and further refined through Reinforcement Learning from Human Feedback (RLHF). Traditional RLHF methods rely on Proximal Policy Optimization (PPO) with reward models, but recent developments such as Direct Preference Optimization (DPO) and Group-Relative Policy Optimization (GRPO) have eliminated the need for explicit reward modeling. GRPO improves upon DPO by leveraging group-level comparisons rather than pairwise ranking, thereby capturing more nuanced preference structures.
@@ -16,6 +17,7 @@ Despite its advantages, GRPO suffers from three main limitations:
 - Lack of Uncertainty Awareness – GRPO does not explicitly adjust for the reliability of human feedback, which can vary in quality.
 
 This thesis proposes **Adaptive GRPO (A-GRPO)**, an extension that dynamically adjusts optimization parameters based on feedback confidence, policy divergence, and group preference strength.
+
 
 ### 2. Adaptive GRPO Algorithm
 
@@ -54,6 +56,7 @@ for each training iteration:
 
 ```
 
+
 ### 3. Experimental Results
 
 **A-GRPO** is evaluated against GRPO and PPO-based RLHF methods on tasks such as text summarization, chatbot fine-tuning, and ranking-based reward modeling. Preliminary results indicate:
@@ -61,6 +64,7 @@ for each training iteration:
 Higher stability: A-GRPO avoids the sharp policy oscillations observed in GRPO.
 Better reward alignment: Models fine-tuned with A-GRPO generate more preferred outputs than GRPO-trained counterparts.
 Faster convergence: Adaptive mechanisms reduce redundant updates, leading to a more efficient training process.
+
 
 ### 4. Conclusion and Future Work
 
