@@ -61,9 +61,9 @@ for each training iteration:
 
 **A-GRPO** is evaluated against GRPO and PPO-based RLHF methods on tasks such as text summarization, chatbot fine-tuning, and ranking-based reward modeling. Preliminary results indicate:
 
-Higher stability: A-GRPO avoids the sharp policy oscillations observed in GRPO.
-Better reward alignment: Models fine-tuned with A-GRPO generate more preferred outputs than GRPO-trained counterparts.
-Faster convergence: Adaptive mechanisms reduce redundant updates, leading to a more efficient training process.
+- Higher stability: A-GRPO avoids the sharp policy oscillations observed in GRPO.
+- Better reward alignment: Models fine-tuned with A-GRPO generate more preferred outputs than GRPO-trained counterparts.
+- Faster convergence: Adaptive mechanisms reduce redundant updates, leading to a more efficient training process.
 
 
 ### 4. Conclusion and Future Work
